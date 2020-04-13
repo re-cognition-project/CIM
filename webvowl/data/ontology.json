@@ -1,0 +1,1874 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://purl.org/recognition/Cim", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/def/saref4city", "http://www.w3.org/2003/01/geo/wgs84_pos", "https://w3id.org/saref", "http://www.co-ode.org/ontologies/ont.owl", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/def/openadr", "http://www.w3.org/2006/time", "http://www.opengis.net/ont/geosparql" ],
+    "title" : {
+      "undefined" : "Re-cognition ontology"
+    },
+    "iri" : "http://purl.org/recognition/Cim#",
+    "version" : "0.0.1",
+    "author" : [ "George Sidiras", "https://www.iti.gr/iti/index.html", "ITI" ],
+    "comments" : {
+      "undefined" : "RE-COGNITION system is that it will be applicable to different building types and locations with various characteristics, preserving its interoperability, though. This is realized through the development of a common vocabulary between the different system components  and it will reuse standard ontologies whenever possible"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/cc-by4.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "George Sidiras",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "ITI",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://www.iti.gr/iti/index.html",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Re-cognition ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "8",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "105",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/recognition/Cim#Asset_Control",
+    "equivalent" : [ "1" ],
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Asset_Control"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2006/time#Interval",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2006/time#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Interval",
+      "undefined" : "Time interval"
+    },
+    "comment" : {
+      "undefined" : "A temporal entity with an extent or duration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#ComfortSetting",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ComfortSetting",
+      "undefined" : "Comfort setting"
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "8",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#Asset_Configuration",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Asset_Configuration"
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "3",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/saref#FeatureOfInterest",
+    "baseIri" : "https://w3id.org/saref",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/saref#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FeatureOfInterest",
+      "undefined" : "Feature Of Interest"
+    },
+    "subClasses" : [ "24", "9", "25", "26" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#Return_Of_Investment",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Return_Of_Investment"
+    },
+    "id" : "24",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#SoC",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "State of charge (SoC) is the level of charge of an electric battery relative to its capacity."
+    },
+    "label" : {
+      "IRI-based" : "SoC"
+    },
+    "id" : "42",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#Feature",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Feature",
+      "undefined" : "Feature"
+    },
+    "subClasses" : [ "46" ],
+    "comment" : {
+      "undefined" : "This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types."
+    },
+    "attributes" : [ "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/saref#UnitOfMeasure",
+    "baseIri" : "https://w3id.org/saref",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/saref",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UnitOfMeasure"
+    },
+    "subClasses" : [ "52" ],
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#Profile",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Profile",
+      "undefined" : "Profile"
+    },
+    "comment" : {
+      "undefined" : "A specification associated to a Virtual Node or a device to collect information about properties"
+    },
+    "id" : "54",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#Soc_Unit",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Soc_Unit"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.org/recognition/Cim#ampere_hour__Ah",
+      "baseIri" : "http://purl.org/recognition/Cim",
+      "labels" : {
+        "IRI-based" : "ampere_hour__Ah"
+      }
+    } ],
+    "id" : "52",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialThing"
+    },
+    "subClasses" : [ "36" ],
+    "attributes" : [ "external" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://w3id.org/saref#Measurement",
+    "baseIri" : "https://w3id.org/saref",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/saref#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Measurement",
+      "undefined" : "Measurement"
+    },
+    "subClasses" : [ "75" ],
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.co-ode.org/ontologies/ont.owl#GroupAsset",
+    "baseIri" : "http://www.co-ode.org/ontologies/ont.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GroupAsset"
+    },
+    "comment" : {
+      "undefined" : "Aggrupation of elements, such as FEIDs or Virtual Nodes"
+    },
+    "attributes" : [ "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/saref#Command",
+    "baseIri" : "https://w3id.org/saref",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Command"
+    },
+    "attributes" : [ "external", "equivalent" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#SystemConstraint",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SystemConstraint",
+      "undefined" : "System constraint"
+    },
+    "id" : "84"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#Frequency",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Frequency",
+      "undefined" : "Frequency"
+    },
+    "comment" : {
+      "undefined" : "Frequency constraint related to the grid"
+    },
+    "id" : "51",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#Asset",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Asset",
+      "undefined" : "Asset"
+    },
+    "id" : "69",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#Incentives",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incentives"
+    },
+    "id" : "25",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#Fluid_Level",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Fluid_Level"
+    },
+    "id" : "61",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://www.co-ode.org/ontologies/ont.owl#Building_Operator_",
+    "baseIri" : "http://www.co-ode.org/ontologies/ont.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Building_Operator_"
+    },
+    "subClasses" : [ "72" ],
+    "comment" : {
+      "undefined" : "Legal entities that aggregate the load or generation of various demand and/or generation/production units and aim at optimizing energy supply and consumption."
+    },
+    "attributes" : [ "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://w3id.org/saref#Energy",
+    "baseIri" : "https://w3id.org/saref",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Energy",
+      "undefined" : "Energy"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.org/recognition/Cim#EnergyConsumption",
+      "baseIri" : "http://purl.org/recognition/Cim",
+      "labels" : {
+        "IRI-based" : "EnergyConsumption",
+        "undefined" : "Energy consumption"
+      }
+    }, {
+      "iri" : "http://purl.org/recognition/Cim#EnergyLoadForecast",
+      "baseIri" : "http://purl.org/recognition/Cim",
+      "labels" : {
+        "IRI-based" : "EnergyLoadForecast",
+        "undefined" : "Energy load forecast"
+      }
+    }, {
+      "iri" : "http://purl.org/recognition/Cim#EnergyGenerationForecast",
+      "baseIri" : "http://purl.org/recognition/Cim",
+      "labels" : {
+        "IRI-based" : "EnergyGenerationForecast",
+        "undefined" : "Energy generation forecast"
+      }
+    }, {
+      "iri" : "http://purl.org/recognition/Cim#EnergyGeneration",
+      "baseIri" : "http://purl.org/recognition/Cim",
+      "labels" : {
+        "IRI-based" : "EnergyGeneration",
+        "undefined" : "Energy generation"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A property related to measurements that are characterized  by a value measured in energy units"
+    },
+    "attributes" : [ "external" ],
+    "id" : "44",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#Energy_Market_Price",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Energy_Market_Price"
+    },
+    "id" : "94"
+  }, {
+    "iri" : "https://w3id.org/saref#Profile",
+    "baseIri" : "https://w3id.org/saref",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/saref#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Profile",
+      "undefined" : "Profile"
+    },
+    "subClasses" : [ "54" ],
+    "comment" : {
+      "undefined" : "A specification associated to a device to collect information about a certain Property (e.g., Energy) or Commodity (e.g.Water) for optimizing its usage in the home, office or building in which the device is located. This specification is about a certain Property or Commodity (saref:isAbout), can be calculated over a time span (saref:hasTime ) and can be associated to some costs (saref:hasPrice). An example is the Power Profile defined in the SAREF4ENER extension that can be associated to a device for optimizing the Energy efficiency in the home, office or building in which the device is located."
+    },
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/saref#Price",
+    "baseIri" : "https://w3id.org/saref",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Price"
+    },
+    "subClasses" : [ "26" ],
+    "attributes" : [ "external" ],
+    "id" : "63",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://w3id.org/saref#Device",
+    "baseIri" : "https://w3id.org/saref",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/saref#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Device",
+      "undefined" : "Device"
+    },
+    "subClasses" : [ "69" ],
+    "comment" : {
+      "undefined" : "A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device's user vs. the point of view of the device's manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended."
+    },
+    "attributes" : [ "external" ],
+    "id" : "36",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#Measurement",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Measurement"
+    },
+    "id" : "75",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#Operator",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Operator"
+    },
+    "id" : "97"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#rational",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "rational"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#Phase",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Phase",
+      "undefined" : "Phase"
+    },
+    "id" : "105"
+  }, {
+    "iri" : "https://w3id.org/def/saref4city#KeyPerformanceIndicator",
+    "baseIri" : "https://w3id.org/def/saref4city",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/saref4city",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "KeyPerformanceIndicator",
+      "undefined" : "Key Performance Indicator"
+    },
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "107",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#Voltage",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Voltage",
+      "undefined" : "Voltage"
+    },
+    "comment" : {
+      "undefined" : "Voltage constraint related to the grid"
+    },
+    "id" : "59",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://w3id.org/saref#Property",
+    "baseIri" : "https://w3id.org/saref",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/saref#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Property",
+      "undefined" : "Property"
+    },
+    "subClasses" : [ "42", "59", "57", "63", "61", "44", "51" ],
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.co-ode.org/ontologies/ont.owl#Building_Manager",
+    "baseIri" : "http://www.co-ode.org/ontologies/ont.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Building_Manager"
+    },
+    "attributes" : [ "external" ],
+    "id" : "72",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#Sector",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sector",
+      "undefined" : "Sector"
+    },
+    "comment" : {
+      "undefined" : "A section or zone"
+    },
+    "id" : "46",
+    "superClasses" : [ "45" ]
+  }, {
+    "iri" : "https://w3id.org/saref#Power",
+    "baseIri" : "https://w3id.org/saref",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Power",
+      "undefined" : "Power"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.org/recognition/Cim#PowerLoadForecast",
+      "baseIri" : "http://purl.org/recognition/Cim",
+      "labels" : {
+        "IRI-based" : "PowerLoadForecast",
+        "undefined" : "Power load forecast"
+      }
+    }, {
+      "iri" : "http://purl.org/recognition/Cim#PowerGeneration",
+      "baseIri" : "http://purl.org/recognition/Cim",
+      "labels" : {
+        "IRI-based" : "PowerGeneration",
+        "undefined" : "Power generation"
+      }
+    }, {
+      "iri" : "http://purl.org/recognition/Cim#PowerConsumption",
+      "baseIri" : "http://purl.org/recognition/Cim",
+      "labels" : {
+        "IRI-based" : "PowerConsumption",
+        "undefined" : "Power consumption"
+      }
+    }, {
+      "iri" : "http://purl.org/recognition/Cim#PowerGenerationForecast",
+      "baseIri" : "http://purl.org/recognition/Cim",
+      "labels" : {
+        "IRI-based" : "PowerGenerationForecast",
+        "undefined" : "Power generation forecast"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A property related to measurements that are characterized  by a value measured in power units"
+    },
+    "attributes" : [ "external" ],
+    "id" : "57",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "https://w3id.org/def/saref4city#KeyPerfomanceIndicatorAssessement",
+    "baseIri" : "https://w3id.org/def/saref4city",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/saref4city",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "KeyPerfomanceIndicatorAssessement",
+      "undefined" : "Key performance indicator assessment"
+    },
+    "attributes" : [ "external" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.w3.org/2006/time#Instant",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2006/time#",
+        "type" : "label"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "Instant",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Instant"
+    },
+    "comment" : {
+      "undefined" : "A temporal entity with zero extent or duration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "48",
+    "superClasses" : [ "49" ]
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#Installation_Cost",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Installation_Cost"
+    },
+    "id" : "26",
+    "superClasses" : [ "63", "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2006/time#TemporalEntity",
+    "baseIri" : "http://www.w3.org/2006/time",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2006/time#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TemporalEntity",
+      "undefined" : "Temporal entity"
+    },
+    "subClasses" : [ "48" ],
+    "comment" : {
+      "undefined" : "A temporal interval or instant."
+    },
+    "attributes" : [ "external" ],
+    "id" : "49"
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "18",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "19",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "31",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "33",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "34",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "35",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "37",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "101",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "103",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "104",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "106",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "112",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://purl.org/recognition/Cim#isAllocatedIn",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isAllocatedIn",
+      "undefined" : "is allocated in"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Link from a virtual node to its aggregator"
+    },
+    "attributes" : [ "object" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#hasSystemConstraint",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasSystemConstraint",
+      "undefined" : "has system constraint"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/saref#isMeasuredIn",
+    "baseIri" : "https://w3id.org/saref",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/saref",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isMeasuredIn",
+      "undefined" : "is measured in"
+    },
+    "domain" : "16",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/saref#hasFeatureOfInterest",
+    "baseIri" : "https://w3id.org/saref",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/saref#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFeatureOfInterest",
+      "undefined" : "has feature of interest"
+    },
+    "domain" : "16",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/saref#isRelatedToMeasurement",
+    "baseIri" : "https://w3id.org/saref",
+    "range" : "16",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/saref",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isRelatedToMeasurement",
+      "undefined" : "is related to measurement"
+    },
+    "domain" : "20",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#owns",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "owns",
+      "undefined" : "owns"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Link between the customers and the devices"
+    },
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/saref#isAbout",
+    "baseIri" : "https://w3id.org/saref",
+    "range" : "20",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/saref#",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAbout",
+      "undefined" : "isAbout"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "A relationship identifying what an entity, such as a Profile, is about"
+    },
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#name",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "name",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/saref#hasValue",
+    "baseIri" : "https://w3id.org/saref",
+    "range" : "29",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/saref",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasValue",
+      "undefined" : "has value"
+    },
+    "domain" : "16",
+    "attributes" : [ "allValues", "external", "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/def/saref4city#isDerivedFrom",
+    "baseIri" : "https://w3id.org/def/saref4city",
+    "range" : "16",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/saref4city",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isDerivedFrom",
+      "undefined" : "is derived from"
+    },
+    "domain" : "32",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#quantifiesKPI",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/saref4city",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "quantifiesKPI"
+    },
+    "domain" : "32",
+    "attributes" : [ "object", "allValues" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/saref#timeStamp",
+    "baseIri" : "https://w3id.org/saref",
+    "range" : "30",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/saref",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "timeStamp",
+      "undefined" : "timestamp"
+    },
+    "domain" : "16",
+    "attributes" : [ "allValues", "external", "datatype" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/saref#measuresProperty",
+    "baseIri" : "https://w3id.org/saref",
+    "range" : "20",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/saref",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "measuresProperty",
+      "undefined" : "measures property"
+    },
+    "domain" : "36",
+    "attributes" : [ "object", "allValues", "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#hasAggregatedProperty",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasAggregatedProperty",
+      "undefined" : "has aggregated property"
+    },
+    "domain" : "38",
+    "comment" : {
+      "undefined" : "Relationship identifying the properties associated to a group of entities, such as clusters"
+    },
+    "attributes" : [ "object", "someValues" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#agreesOn",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "agreesOn",
+      "undefined" : "agrees on"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#clusterDescription",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "clusterDescription",
+      "undefined" : "cluster description"
+    },
+    "domain" : "38",
+    "comment" : {
+      "undefined" : "Description of a cluster"
+    },
+    "attributes" : [ "allValues", "datatype" ],
+    "id" : "41"
+  }, {
+    "range" : "20",
+    "domain" : "44",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "49",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "20",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#hasPayment",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasPayment",
+      "undefined" : "has payment"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#hasIncentive",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasIncentive",
+      "undefined" : "has incentive"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "A relation between a property and its incentives associated"
+    },
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "range" : "20",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "20",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "20",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "20",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "range" : "63",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "23",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "range" : "20",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "36",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#manages",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "manages",
+      "undefined" : "manages"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Relation between a Virutal Node and the  devices it manages"
+    },
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "range" : "73",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "16",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#hasCurrency",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasCurrency",
+      "undefined" : "has currency"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Link between a price and its currency"
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "https://w3id.org/saref#makesMeasurement",
+    "baseIri" : "https://w3id.org/saref",
+    "range" : "3",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/saref",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "makesMeasurement",
+      "undefined" : "makes measurement"
+    },
+    "domain" : "3",
+    "attributes" : [ "object", "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#hasComfortSetting",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasComfortSetting",
+      "undefined" : "has comfort settings"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "range" : "66",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "3",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#hasTransaction",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasTransaction",
+      "undefined" : "has transaction"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "range" : "10",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "10",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "17",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "45",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "range" : "10",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#type",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "type",
+      "undefined" : "type"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#href",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "href",
+      "undefined" : "href"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "URI of the endpoint"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#status",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "status",
+      "undefined" : "status"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "The final status as if the DVN fullfiled the request or it failed"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#hasReward",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasReward",
+      "undefined" : "has reward"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Link between a customer and its associated reward"
+    },
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.opengis.net/ont/geosparql",
+        "type" : "iri"
+      }, {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "A spatial representation for a given feature.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasGeometry",
+      "undefined" : "hasGeometry"
+    },
+    "domain" : "45",
+    "attributes" : [ "object", "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "https://w3id.org/saref#consistsOf",
+    "baseIri" : "https://w3id.org/saref",
+    "range" : "3",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/saref",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "consistsOf",
+      "undefined" : "consists of"
+    },
+    "domain" : "3",
+    "attributes" : [ "object", "external" ],
+    "id" : "98"
+  }, {
+    "iri" : "https://w3id.org/def/openadr#hasDuration",
+    "baseIri" : "https://w3id.org/def/openadr",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasDuration"
+    },
+    "domain" : "54",
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#sectorName",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "sectorName",
+      "undefined" : "sector name"
+    },
+    "domain" : "46",
+    "attributes" : [ "allValues", "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#consumes",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "consumes",
+      "undefined" : "consumes"
+    },
+    "domain" : "73",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#hasProfile",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "hasProfile",
+      "undefined" : "has profile"
+    },
+    "domain" : "73",
+    "comment" : {
+      "undefined" : "Link between an entity and its profile"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#clusterName",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "clusterName",
+      "undefined" : "cluster name"
+    },
+    "domain" : "38",
+    "comment" : {
+      "undefined" : "Name of a cluster"
+    },
+    "attributes" : [ "allValues", "datatype" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#isValidDuringPeriod",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "isValidDuringPeriod",
+      "undefined" : "is valid during period"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Period where an entity, such a contract, is valid"
+    },
+    "attributes" : [ "object" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#hasDuration",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "hasDuration",
+      "undefined" : "has duration"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Duration of an event"
+    },
+    "attributes" : [ "object" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#hasDescription",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "hasDescription",
+      "undefined" : "description"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#hasPhase",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "hasPhase",
+      "undefined" : "has phase"
+    },
+    "domain" : "75",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#granularity",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "granularity",
+      "undefined" : "granularity"
+    },
+    "domain" : "54",
+    "comment" : {
+      "undefined" : "granularity of the profile (e.g., weekly, daily)"
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#isRelatedToProperty",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isRelatedToProperty",
+      "undefined" : "is related to property"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#isOwnedBy",
+    "inverse" : "21",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isOwnedBy",
+      "undefined" : "is owned by"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Link between a device and its customer"
+    },
+    "attributes" : [ "object" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#hasSmartContract",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "hasSmartContract",
+      "undefined" : "has smart contract"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "link between the Virtual node and its smart contracts"
+    },
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "https://w3id.org/def/openadr#sendsEvent",
+    "baseIri" : "https://w3id.org/def/openadr",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "sendsEvent"
+    },
+    "domain" : "3",
+    "attributes" : [ "object", "external" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#isLocatedAt",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isLocatedAt",
+      "undefined" : "is located at"
+    },
+    "domain" : "3",
+    "comment" : {
+      "undefined" : "Relation between an object and the geographical feature in which it is located at"
+    },
+    "attributes" : [ "object" ],
+    "id" : "118"
+  } ]
+}
