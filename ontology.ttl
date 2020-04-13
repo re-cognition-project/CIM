@@ -53,20 +53,9 @@
 #    Object Properties
 #################################################################
 
-###  http://purl.org/recognition/Cim#agreesOn
-:agreesOn rdf:type owl:ObjectProperty ;
-          rdfs:label "agrees on" .
-
-
 ###  http://purl.org/recognition/Cim#consumes
 :consumes rdf:type owl:ObjectProperty ;
           rdfs:label "consumes" .
-
-
-###  http://purl.org/recognition/Cim#hasAggregatedProperty
-:hasAggregatedProperty rdf:type owl:ObjectProperty ;
-                       rdfs:comment "Relationship identifying the properties associated to a group of entities, such as clusters" ;
-                       rdfs:label "has aggregated property" .
 
 
 ###  http://purl.org/recognition/Cim#hasComfortSetting
@@ -109,18 +98,6 @@
             rdfs:label "has profile" .
 
 
-###  http://purl.org/recognition/Cim#hasReward
-:hasReward rdf:type owl:ObjectProperty ;
-           rdfs:comment "Link between a customer and its associated reward" ;
-           rdfs:label "has reward" .
-
-
-###  http://purl.org/recognition/Cim#hasSmartContract
-:hasSmartContract rdf:type owl:ObjectProperty ;
-                  rdfs:comment "link between the Virtual node and its smart contracts" ;
-                  rdfs:label "has smart contract" .
-
-
 ###  http://purl.org/recognition/Cim#hasSystemConstraint
 :hasSystemConstraint rdf:type owl:ObjectProperty ;
                      rdfs:label "has system constraint" .
@@ -129,12 +106,6 @@
 ###  http://purl.org/recognition/Cim#hasTransaction
 :hasTransaction rdf:type owl:ObjectProperty ;
                 rdfs:label "has transaction" .
-
-
-###  http://purl.org/recognition/Cim#isAllocatedIn
-:isAllocatedIn rdf:type owl:ObjectProperty ;
-               rdfs:comment "Link from a virtual node to its aggregator" ;
-               rdfs:label "is allocated in" .
 
 
 ###  http://purl.org/recognition/Cim#isLocatedAt
@@ -394,7 +365,7 @@
                            owl:onProperty :granularity ;
                            owl:someValuesFrom owl:rational
                          ] ;
-         rdfs:comment "A specification associated to a Virtual Node or a device to collect information about properties" ;
+         rdfs:comment "A specification associated to a Building Profiles  or a device to collect information about profiles" ;
          rdfs:label "Profile" .
 
 
@@ -458,10 +429,6 @@
 ###  http://www.co-ode.org/ontologies/ont.owl#GroupAsset
 <http://www.co-ode.org/ontologies/ont.owl#GroupAsset> rdf:type owl:Class ;
                                                       rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                                        owl:onProperty :hasAggregatedProperty ;
-                                                                        owl:someValuesFrom <https://w3id.org/saref#Property>
-                                                                      ] ,
-                                                                      [ rdf:type owl:Restriction ;
                                                                         owl:onProperty :clusterDescription ;
                                                                         owl:allValuesFrom rdfs:Literal
                                                                       ] ,
@@ -469,7 +436,7 @@
                                                                         owl:onProperty :clusterName ;
                                                                         owl:allValuesFrom rdfs:Literal
                                                                       ] ;
-                                                      rdfs:comment "Aggrupation of elements, such as FEIDs or Virtual Nodes" .
+                                                      rdfs:comment "Group Asset such as FEIDs or Cluserr Devices " .
 
 
 ###  http://www.opengis.net/ont/geosparql#Feature

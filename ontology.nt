@@ -47,18 +47,9 @@
 # #################################################################
 # 
 # 
-# http://purl.org/recognition/Cim#agreesOn
-<http://purl.org/recognition/Cim#agreesOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/recognition/Cim#agreesOn> <http://www.w3.org/2000/01/rdf-schema#label> "agrees on" .
-# 
 # http://purl.org/recognition/Cim#consumes
 <http://purl.org/recognition/Cim#consumes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/recognition/Cim#consumes> <http://www.w3.org/2000/01/rdf-schema#label> "consumes" .
-# 
-# http://purl.org/recognition/Cim#hasAggregatedProperty
-<http://purl.org/recognition/Cim#hasAggregatedProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/recognition/Cim#hasAggregatedProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship identifying the properties associated to a group of entities, such as clusters" .
-<http://purl.org/recognition/Cim#hasAggregatedProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has aggregated property" .
 # 
 # http://purl.org/recognition/Cim#hasComfortSetting
 <http://purl.org/recognition/Cim#hasComfortSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -93,16 +84,6 @@
 <http://purl.org/recognition/Cim#hasProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "Link between an entity and its profile" .
 <http://purl.org/recognition/Cim#hasProfile> <http://www.w3.org/2000/01/rdf-schema#label> "has profile" .
 # 
-# http://purl.org/recognition/Cim#hasReward
-<http://purl.org/recognition/Cim#hasReward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/recognition/Cim#hasReward> <http://www.w3.org/2000/01/rdf-schema#comment> "Link between a customer and its associated reward" .
-<http://purl.org/recognition/Cim#hasReward> <http://www.w3.org/2000/01/rdf-schema#label> "has reward" .
-# 
-# http://purl.org/recognition/Cim#hasSmartContract
-<http://purl.org/recognition/Cim#hasSmartContract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/recognition/Cim#hasSmartContract> <http://www.w3.org/2000/01/rdf-schema#comment> "link between the Virtual node and its smart contracts" .
-<http://purl.org/recognition/Cim#hasSmartContract> <http://www.w3.org/2000/01/rdf-schema#label> "has smart contract" .
-# 
 # http://purl.org/recognition/Cim#hasSystemConstraint
 <http://purl.org/recognition/Cim#hasSystemConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/recognition/Cim#hasSystemConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "has system constraint" .
@@ -110,11 +91,6 @@
 # http://purl.org/recognition/Cim#hasTransaction
 <http://purl.org/recognition/Cim#hasTransaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://purl.org/recognition/Cim#hasTransaction> <http://www.w3.org/2000/01/rdf-schema#label> "has transaction" .
-# 
-# http://purl.org/recognition/Cim#isAllocatedIn
-<http://purl.org/recognition/Cim#isAllocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://purl.org/recognition/Cim#isAllocatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Link from a virtual node to its aggregator" .
-<http://purl.org/recognition/Cim#isAllocatedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is allocated in" .
 # 
 # http://purl.org/recognition/Cim#isLocatedAt
 <http://purl.org/recognition/Cim#isLocatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -343,7 +319,7 @@ _:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2006/
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/recognition/Cim#granularity> .
 _:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2002/07/owl#rational> .
-<http://purl.org/recognition/Cim#Profile> <http://www.w3.org/2000/01/rdf-schema#comment> "A specification associated to a Virtual Node or a device to collect information about properties" .
+<http://purl.org/recognition/Cim#Profile> <http://www.w3.org/2000/01/rdf-schema#comment> "A specification associated to a Building Profiles  or a device to collect information about profiles" .
 <http://purl.org/recognition/Cim#Profile> <http://www.w3.org/2000/01/rdf-schema#label> "Profile" .
 # 
 # http://purl.org/recognition/Cim#Return_Of_Investment
@@ -399,17 +375,13 @@ _:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://purl.org/recognit
 <http://www.co-ode.org/ontologies/ont.owl#GroupAsset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.co-ode.org/ontologies/ont.owl#GroupAsset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/recognition/Cim#hasAggregatedProperty> .
-_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/saref#Property> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/recognition/Cim#clusterDescription> .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <http://www.co-ode.org/ontologies/ont.owl#GroupAsset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/recognition/Cim#clusterDescription> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/recognition/Cim#clusterName> .
 _:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://www.co-ode.org/ontologies/ont.owl#GroupAsset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/recognition/Cim#clusterName> .
-_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<http://www.co-ode.org/ontologies/ont.owl#GroupAsset> <http://www.w3.org/2000/01/rdf-schema#comment> "Aggrupation of elements, such as FEIDs or Virtual Nodes" .
+<http://www.co-ode.org/ontologies/ont.owl#GroupAsset> <http://www.w3.org/2000/01/rdf-schema#comment> "Group Asset such as FEIDs or Cluserr Devices " .
 # 
 # http://www.opengis.net/ont/geosparql#Feature
 <http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -446,14 +418,14 @@ _:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2000/0
 # 
 # https://w3id.org/def/saref4city#KeyPerformanceIndicator
 <https://w3id.org/def/saref4city#KeyPerformanceIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/saref4city#KeyPerformanceIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/recognition/Cim#quantifiesKPI> .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/saref4city#KeyPerformanceIndicator> .
 <https://w3id.org/def/saref4city#KeyPerformanceIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/recognition/Cim#quantifiesKPI> .
-_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/saref4city#KeyPerformanceIndicator> .
-<https://w3id.org/def/saref4city#KeyPerformanceIndicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/saref4city#isDerivedFrom> .
-_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Measurement> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/saref4city#isDerivedFrom> .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Measurement> .
 <https://w3id.org/def/saref4city#KeyPerformanceIndicator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/def/saref4city> .
 <https://w3id.org/def/saref4city#KeyPerformanceIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "Key Performance Indicator" .
 # 
@@ -461,10 +433,10 @@ _:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#
 # 
 # https://w3id.org/saref#Device
 <https://w3id.org/saref#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/saref#Device> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#measuresProperty> .
-_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#measuresProperty> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Property> .
 <https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
 <https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device's user vs. the point of view of the device's manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended." .
 <https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/def/saref#" .
@@ -483,22 +455,22 @@ _:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#
 # 
 # https://w3id.org/saref#Measurement
 <https://w3id.org/saref#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasFeatureOfInterest> .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#FeatureOfInterest> .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasFeatureOfInterest> .
-_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#FeatureOfInterest> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredIn> .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#UnitOfMeasure> .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredIn> .
-_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#UnitOfMeasure> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasValue> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasValue> .
-_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
-<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#timeStamp> .
-_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#timeStamp> .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/def/saref#" .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement" .
 # 
@@ -514,20 +486,20 @@ _:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/
 # 
 # https://w3id.org/saref#Profile
 <https://w3id.org/saref#Profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/saref#Profile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isAbout> .
-_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Profile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isAbout> .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Property> .
 <https://w3id.org/saref#Profile> <http://www.w3.org/2000/01/rdf-schema#comment> "A specification associated to a device to collect information about a certain Property (e.g., Energy) or Commodity (e.g.Water) for optimizing its usage in the home, office or building in which the device is located. This specification is about a certain Property or Commodity (saref:isAbout), can be calculated over a time span (saref:hasTime ) and can be associated to some costs (saref:hasPrice). An example is the Power Profile defined in the SAREF4ENER extension that can be associated to a device for optimizing the Energy efficiency in the home, office or building in which the device is located." .
 <https://w3id.org/saref#Profile> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
 <https://w3id.org/saref#Profile> <http://www.w3.org/2000/01/rdf-schema#label> "Profile" .
 # 
 # https://w3id.org/saref#Property
 <https://w3id.org/saref#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isRelatedToMeasurement> .
-_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Measurement> .
+<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isRelatedToMeasurement> .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Measurement> .
 <https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/def/saref#" .
 <https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property" .
 # 

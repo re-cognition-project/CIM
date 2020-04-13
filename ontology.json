@@ -11,22 +11,13 @@
   "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/saref4city#KeyPerformanceIndicator"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/recognition/Cim#quantifiesKPI"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/saref#Measurement"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://w3id.org/def/saref4city#isDerivedFrom"
   } ]
 }, {
-  "@id" : "_:genid12",
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/saref#Property"
@@ -35,7 +26,7 @@
     "@id" : "https://w3id.org/saref#measuresProperty"
   } ]
 }, {
-  "@id" : "_:genid13",
+  "@id" : "_:genid12",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/saref#FeatureOfInterest"
@@ -44,7 +35,7 @@
     "@id" : "https://w3id.org/saref#hasFeatureOfInterest"
   } ]
 }, {
-  "@id" : "_:genid14",
+  "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/saref#UnitOfMeasure"
@@ -53,7 +44,7 @@
     "@id" : "https://w3id.org/saref#isMeasuredIn"
   } ]
 }, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -62,7 +53,7 @@
     "@id" : "https://w3id.org/saref#hasValue"
   } ]
 }, {
-  "@id" : "_:genid16",
+  "@id" : "_:genid15",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -71,7 +62,7 @@
     "@id" : "https://w3id.org/saref#timeStamp"
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid16",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/saref#Property"
@@ -80,7 +71,7 @@
     "@id" : "https://w3id.org/saref#isAbout"
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "https://w3id.org/saref#Measurement"
@@ -136,11 +127,11 @@
 }, {
   "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/recognition/Cim#hasAggregatedProperty"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/saref#Property"
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/recognition/Cim#clusterDescription"
   } ]
 }, {
   "@id" : "_:genid8",
@@ -149,16 +140,16 @@
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/recognition/Cim#clusterDescription"
+    "@id" : "http://purl.org/recognition/Cim#clusterName"
   } ]
 }, {
   "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    "@id" : "https://w3id.org/def/saref4city#KeyPerformanceIndicator"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://purl.org/recognition/Cim#clusterName"
+    "@id" : "http://purl.org/recognition/Cim#quantifiesKPI"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/title",
@@ -351,7 +342,7 @@
   "@id" : "http://purl.org/recognition/Cim#Profile",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A specification associated to a Virtual Node or a device to collect information about properties"
+    "@value" : "A specification associated to a Building Profiles  or a device to collect information about profiles"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Profile"
@@ -423,12 +414,6 @@
     "@id" : "https://w3id.org/saref#Property"
   } ]
 }, {
-  "@id" : "http://purl.org/recognition/Cim#agreesOn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "agrees on"
-  } ]
-}, {
   "@id" : "http://purl.org/recognition/Cim#ampere_hour__Ah",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/recognition/Cim#Soc_Unit" ]
 }, {
@@ -466,15 +451,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "granularity"
-  } ]
-}, {
-  "@id" : "http://purl.org/recognition/Cim#hasAggregatedProperty",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Relationship identifying the properties associated to a group of entities, such as clusters"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has aggregated property"
   } ]
 }, {
   "@id" : "http://purl.org/recognition/Cim#hasComfortSetting",
@@ -540,24 +516,6 @@
     "@value" : "has profile"
   } ]
 }, {
-  "@id" : "http://purl.org/recognition/Cim#hasReward",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Link between a customer and its associated reward"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has reward"
-  } ]
-}, {
-  "@id" : "http://purl.org/recognition/Cim#hasSmartContract",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "link between the Virtual node and its smart contracts"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has smart contract"
-  } ]
-}, {
   "@id" : "http://purl.org/recognition/Cim#hasSystemConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -577,15 +535,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "href"
-  } ]
-}, {
-  "@id" : "http://purl.org/recognition/Cim#isAllocatedIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Link from a virtual node to its aggregator"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "is allocated in"
   } ]
 }, {
   "@id" : "http://purl.org/recognition/Cim#isLocatedAt",
@@ -704,14 +653,12 @@
   "@id" : "http://www.co-ode.org/ontologies/ont.owl#GroupAsset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Aggrupation of elements, such as FEIDs or Virtual Nodes"
+    "@value" : "Group Asset such as FEIDs or Cluserr Devices "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "_:genid7"
   }, {
     "@id" : "_:genid8"
-  }, {
-    "@id" : "_:genid9"
   } ]
 }, {
   "@id" : "http://www.opengis.net/ont/geosparql#Feature",
@@ -805,9 +752,9 @@
     "@value" : "Key Performance Indicator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid10"
+    "@id" : "_:genid9"
   }, {
-    "@id" : "_:genid11"
+    "@id" : "_:genid10"
   } ]
 }, {
   "@id" : "https://w3id.org/def/saref4city#isDerivedFrom",
@@ -837,7 +784,7 @@
     "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid12"
+    "@id" : "_:genid11"
   } ]
 }, {
   "@id" : "https://w3id.org/saref#Energy",
@@ -870,13 +817,13 @@
     "@value" : "Measurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid12"
+  }, {
     "@id" : "_:genid13"
   }, {
     "@id" : "_:genid14"
   }, {
     "@id" : "_:genid15"
-  }, {
-    "@id" : "_:genid16"
   } ]
 }, {
   "@id" : "https://w3id.org/saref#Power",
@@ -909,7 +856,7 @@
     "@value" : "Profile"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid17"
+    "@id" : "_:genid16"
   } ]
 }, {
   "@id" : "https://w3id.org/saref#Property",
@@ -921,7 +868,7 @@
     "@value" : "Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid18"
+    "@id" : "_:genid17"
   } ]
 }, {
   "@id" : "https://w3id.org/saref#UnitOfMeasure",

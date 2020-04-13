@@ -97,30 +97,11 @@
     
 
 
-    <!-- http://purl.org/recognition/Cim#agreesOn -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#agreesOn">
-        <rdfs:label>agrees on</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/recognition/Cim#consumes -->
 
 
     <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#consumes">
         <rdfs:label>consumes</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/recognition/Cim#hasAggregatedProperty -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#hasAggregatedProperty">
-        <rdfs:comment>Relationship identifying the properties associated to a group of entities, such as clusters</rdfs:comment>
-        <rdfs:label>has aggregated property</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -193,26 +174,6 @@
     
 
 
-    <!-- http://purl.org/recognition/Cim#hasReward -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#hasReward">
-        <rdfs:comment>Link between a customer and its associated reward</rdfs:comment>
-        <rdfs:label>has reward</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/recognition/Cim#hasSmartContract -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#hasSmartContract">
-        <rdfs:comment>link between the Virtual node and its smart contracts</rdfs:comment>
-        <rdfs:label>has smart contract</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/recognition/Cim#hasSystemConstraint -->
 
 
@@ -227,16 +188,6 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#hasTransaction">
         <rdfs:label>has transaction</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/recognition/Cim#isAllocatedIn -->
-
-
-    <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#isAllocatedIn">
-        <rdfs:comment>Link from a virtual node to its aggregator</rdfs:comment>
-        <rdfs:label>is allocated in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -682,7 +633,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#rational"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A specification associated to a Virtual Node or a device to collect information about properties</rdfs:comment>
+        <rdfs:comment>A specification associated to a Building Profiles  or a device to collect information about profiles</rdfs:comment>
         <rdfs:label>Profile</rdfs:label>
     </owl:Class>
     
@@ -789,12 +740,6 @@
     <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#GroupAsset">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/recognition/Cim#hasAggregatedProperty"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/saref#Property"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/recognition/Cim#clusterDescription"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
@@ -805,7 +750,7 @@
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Aggrupation of elements, such as FEIDs or Virtual Nodes</rdfs:comment>
+        <rdfs:comment>Group Asset such as FEIDs or Cluserr Devices </rdfs:comment>
     </owl:Class>
     
 
