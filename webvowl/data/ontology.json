@@ -22,6 +22,11 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
+        "value" : "https://www.iti.gr/iti/index.html",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
         "value" : "ITI",
         "type" : "label"
       }, {
@@ -29,11 +34,6 @@
         "language" : "undefined",
         "value" : "George Sidiras",
         "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "https://www.iti.gr/iti/index.html",
-        "type" : "iri"
       } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
@@ -99,13 +99,13 @@
     "id" : "25",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "29",
+    "id" : "32",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "33",
+    "id" : "31",
     "type" : "owl:Class"
   }, {
     "id" : "42",
@@ -355,7 +355,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "29",
+    "id" : "32",
     "label" : {
       "IRI-based" : "dateTime"
     }
@@ -388,7 +388,7 @@
     },
     "subClasses" : [ "40" ],
     "attributes" : [ "external" ],
-    "id" : "33"
+    "id" : "31"
   }, {
     "iri" : "http://purl.org/recognition/Cim#Profile",
     "baseIri" : "http://purl.org/recognition/Cim",
@@ -417,7 +417,7 @@
       }
     } ],
     "id" : "40",
-    "superClasses" : [ "33" ]
+    "superClasses" : [ "31" ]
   }, {
     "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
     "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
@@ -426,13 +426,13 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://mariapoveda.github.io/saref-ext/OnToology/SAREF4BLD/ontology/saref4bldg.ttl/documentation/ontology.xml",
-        "type" : "iri"
+        "value" : "https://w3id.org/def/saref4bldg#PhysicalObject",
+        "type" : "label"
       }, {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
-        "value" : "https://w3id.org/def/saref4bldg#PhysicalObject",
-        "type" : "label"
+        "value" : "https://mariapoveda.github.io/saref-ext/OnToology/SAREF4BLD/ontology/saref4bldg.ttl/documentation/ontology.xml",
+        "type" : "iri"
       } ]
     },
     "label" : {
@@ -904,13 +904,13 @@
     "id" : "27",
     "type" : "owl:allValuesFrom"
   }, {
+    "id" : "29",
+    "type" : "owl:allValuesFrom"
+  }, {
     "id" : "30",
     "type" : "owl:allValuesFrom"
   }, {
-    "id" : "31",
-    "type" : "owl:allValuesFrom"
-  }, {
-    "id" : "32",
+    "id" : "33",
     "type" : "owl:allValuesFrom"
   }, {
     "id" : "34",
@@ -1022,10 +1022,10 @@
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "93",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:allValuesFrom"
   }, {
     "id" : "94",
-    "type" : "owl:allValuesFrom"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "95",
     "type" : "owl:allValuesFrom"
@@ -1093,7 +1093,7 @@
       "undefined" : "is related to measurement"
     },
     "domain" : "18",
-    "attributes" : [ "object", "allValues", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "17"
   }, {
     "iri" : "http://purl.org/recognition/Cim#owns",
@@ -1144,7 +1144,7 @@
       "undefined" : "has value"
     },
     "domain" : "19",
-    "attributes" : [ "allValues", "external", "datatype" ],
+    "attributes" : [ "external", "datatype", "allValues" ],
     "id" : "26"
   }, {
     "iri" : "https://w3id.org/saref#isAbout",
@@ -1166,27 +1166,8 @@
     "comment" : {
       "undefined" : "A relationship identifying what an entity, such as a Profile, is about"
     },
-    "attributes" : [ "object", "allValues", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "27"
-  }, {
-    "iri" : "https://w3id.org/saref#timeStamp",
-    "baseIri" : "https://w3id.org/saref",
-    "range" : "29",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/def/saref",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "timeStamp",
-      "undefined" : "timestamp"
-    },
-    "domain" : "19",
-    "attributes" : [ "allValues", "external", "datatype" ],
-    "id" : "30"
   }, {
     "iri" : "https://w3id.org/saref#hasFeatureOfInterest",
     "baseIri" : "https://w3id.org/saref",
@@ -1204,12 +1185,12 @@
       "undefined" : "has feature of interest"
     },
     "domain" : "19",
-    "attributes" : [ "object", "allValues", "external" ],
-    "id" : "31"
+    "attributes" : [ "object", "external", "allValues" ],
+    "id" : "29"
   }, {
     "iri" : "https://w3id.org/saref#isMeasuredIn",
     "baseIri" : "https://w3id.org/saref",
-    "range" : "33",
+    "range" : "31",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1223,8 +1204,27 @@
       "undefined" : "is measured in"
     },
     "domain" : "19",
-    "attributes" : [ "object", "allValues", "external" ],
-    "id" : "32"
+    "attributes" : [ "object", "external", "allValues" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/saref#timeStamp",
+    "baseIri" : "https://w3id.org/saref",
+    "range" : "32",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/def/saref",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "timeStamp",
+      "undefined" : "timestamp"
+    },
+    "domain" : "19",
+    "attributes" : [ "external", "datatype", "allValues" ],
+    "id" : "33"
   }, {
     "iri" : "https://w3id.org/def/saref4city#isDerivedFrom",
     "baseIri" : "https://w3id.org/def/saref4city",
@@ -1242,7 +1242,7 @@
       "undefined" : "is derived from"
     },
     "domain" : "35",
-    "attributes" : [ "object", "allValues", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "34"
   }, {
     "iri" : "https://w3id.org/saref#measuresProperty",
@@ -1261,7 +1261,7 @@
       "undefined" : "measures property"
     },
     "domain" : "37",
-    "attributes" : [ "object", "allValues", "external" ],
+    "attributes" : [ "object", "external", "allValues" ],
     "id" : "36"
   }, {
     "iri" : "http://purl.org/recognition/Cim#quantifiesKPI",
@@ -1351,7 +1351,7 @@
     },
     "domain" : "15",
     "comment" : {
-      "undefined" : "Relation between a Virutal Node and the  devices it manages"
+      "undefined" : "Relation between a bulding and the  devices it manages"
     },
     "attributes" : [ "object" ],
     "id" : "60"
@@ -1466,7 +1466,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "80"
   }, {
-    "range" : "33",
+    "range" : "31",
     "domain" : "40",
     "attributes" : [ "object", "anonymous" ],
     "id" : "81"
@@ -1583,17 +1583,6 @@
     "attributes" : [ "someValues", "datatype" ],
     "id" : "91"
   }, {
-    "iri" : "http://purl.org/recognition/Cim#consumes",
-    "baseIri" : "http://purl.org/recognition/Cim",
-    "range" : "89",
-    "label" : {
-      "IRI-based" : "consumes",
-      "undefined" : "consumes"
-    },
-    "domain" : "78",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "93"
-  }, {
     "iri" : "http://purl.org/recognition/Cim#hasProfile",
     "baseIri" : "http://purl.org/recognition/Cim",
     "range" : "42",
@@ -1606,25 +1595,22 @@
       "undefined" : "Link between an entity and its profile"
     },
     "attributes" : [ "object", "allValues" ],
-    "id" : "94"
+    "id" : "93"
   }, {
-    "iri" : "http://purl.org/recognition/Cim#clusterDescription",
+    "iri" : "http://purl.org/recognition/Cim#consumes",
     "baseIri" : "http://purl.org/recognition/Cim",
-    "range" : "96",
+    "range" : "89",
     "label" : {
-      "IRI-based" : "clusterDescription",
-      "undefined" : "cluster description"
+      "IRI-based" : "consumes",
+      "undefined" : "consumes"
     },
-    "domain" : "66",
-    "comment" : {
-      "undefined" : "Description of a cluster"
-    },
-    "attributes" : [ "allValues", "datatype" ],
-    "id" : "95"
+    "domain" : "78",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "94"
   }, {
     "iri" : "http://purl.org/recognition/Cim#clusterName",
     "baseIri" : "http://purl.org/recognition/Cim",
-    "range" : "99",
+    "range" : "96",
     "label" : {
       "IRI-based" : "clusterName",
       "undefined" : "cluster name"
@@ -1633,22 +1619,22 @@
     "comment" : {
       "undefined" : "Name of a cluster"
     },
-    "attributes" : [ "allValues", "datatype" ],
-    "id" : "98"
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "95"
   }, {
-    "iri" : "http://purl.org/recognition/Cim#isValidDuringPeriod",
+    "iri" : "http://purl.org/recognition/Cim#clusterDescription",
     "baseIri" : "http://purl.org/recognition/Cim",
-    "range" : "50",
+    "range" : "99",
     "label" : {
-      "IRI-based" : "isValidDuringPeriod",
-      "undefined" : "is valid during period"
+      "IRI-based" : "clusterDescription",
+      "undefined" : "cluster description"
     },
-    "domain" : "12",
+    "domain" : "66",
     "comment" : {
-      "undefined" : "Period where an entity, such a contract, is valid"
+      "undefined" : "Description of a cluster"
     },
-    "attributes" : [ "object" ],
-    "id" : "100"
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "98"
   }, {
     "iri" : "http://purl.org/recognition/Cim#hasDuration",
     "baseIri" : "http://purl.org/recognition/Cim",
@@ -1660,6 +1646,20 @@
     "domain" : "12",
     "comment" : {
       "undefined" : "Duration of an event"
+    },
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://purl.org/recognition/Cim#isValidDuringPeriod",
+    "baseIri" : "http://purl.org/recognition/Cim",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "isValidDuringPeriod",
+      "undefined" : "is valid during period"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Period where an entity, such a contract, is valid"
     },
     "attributes" : [ "object" ],
     "id" : "101"
@@ -1683,7 +1683,7 @@
       "undefined" : "has phase"
     },
     "domain" : "65",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "103"
   }, {
     "iri" : "https://w3id.org/def/openadr#hasDuration",
@@ -1693,7 +1693,7 @@
       "IRI-based" : "hasDuration"
     },
     "domain" : "42",
-    "attributes" : [ "someValues", "object", "external" ],
+    "attributes" : [ "object", "external", "someValues" ],
     "id" : "104"
   }, {
     "iri" : "http://purl.org/recognition/Cim#isRelatedToProperty",

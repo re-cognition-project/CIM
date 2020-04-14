@@ -135,7 +135,7 @@
 
 ###  http://purl.org/recognition/Cim#manages
 :manages rdf:type owl:ObjectProperty ;
-         rdfs:comment "Relation between a Virutal Node and the  devices it manages" ;
+         rdfs:comment "Relation between a bulding and the  devices it manages" ;
          rdfs:label "manages" .
 
 

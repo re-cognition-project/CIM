@@ -237,7 +237,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://purl.org/recognition/Cim#manages">
-        <rdfs:comment>Relation between a Virutal Node and the  devices it manages</rdfs:comment>
+        <rdfs:comment>Relation between a bulding and the  devices it manages</rdfs:comment>
         <rdfs:label>manages</rdfs:label>
     </owl:ObjectProperty>
     
