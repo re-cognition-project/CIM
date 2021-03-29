@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://purl.org/recognition/Cim#> .
-
+\
 <http://purl.org/recognition/Cim#> rdf:type owl:Ontology ;
                                     owl:imports <https://w3id.org/def/v1/saref4bldg> ;
                                     <http://purl.org/dc/elements/1.1/title> "Re-cognition ontology" ;
