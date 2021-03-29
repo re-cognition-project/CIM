@@ -8,10 +8,10 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="https://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.org/recognition/Cim#">
-        <owl:imports rdf:resource="https://w3id.org/saref"/>
         <owl:imports rdf:resource="https://w3id.org/def/v1/saref4bldg"/>
         <dc:title>Re-cognition ontology</dc:title>
         <terms:creator rdf:resource="https://www.iti.gr/iti/index.html"/>
@@ -82,6 +82,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/recognition/Cim#preferredNamespaceUri"/>
+    
+
+
+    <!-- https://www.w3.org/ns/prov#hadPrimarySource -->
+
+
+    <owl:AnnotationProperty rdf:about="https://www.w3.org/ns/prov#hadPrimarySource"/>
     
 
 
@@ -523,9 +530,14 @@
     <!-- http://purl.org/recognition/Cim#Asset_Control -->
 
 
-    <owl:Class rdf:about="http://purl.org/recognition/Cim#Asset_Control">
-        <owl:equivalentClass rdf:resource="https://w3id.org/saref#Command"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Asset_Control"/>
+    
+
+
+    <!-- http://purl.org/recognition/Cim#Cluster -->
+
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Cluster"/>
     
 
 
@@ -686,6 +698,15 @@
     
 
 
+    <!-- http://purl.org/recognition/Cim#Οccupancy -->
+
+
+    <owl:Class rdf:about="http://purl.org/recognition/Cim#Οccupancy">
+        <rdfs:isDefinedBy>Comfort setting</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
     <!-- http://www.co-ode.org/ontologies/ont.owl#Building_Manager -->
 
 
@@ -732,19 +753,27 @@
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Group Asset such as FEIDs or Cluserr Devices </rdfs:comment>
+        <rdfs:comment>Group Asset such as Building or Cluserr Devices</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing -->
+    <!-- http://www.opengis.net/ont/geosparql#SpatialObject -->
 
 
-    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
-        <rdfs:comment>SAREF extension for building devices
-SAREF4BLDG ontology, an extension of the SAREF ontology that was created based on the Industry Foundation Classes (IFC) standard for building information. It should be noted that not the whole standard has been transformed since it exceeds the scope of this extension, which is limited to devices and appliances within the building domain.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://mariapoveda.github.io/saref-ext/OnToology/SAREF4BLD/ontology/saref4bldg.ttl/documentation/ontology.xml"/>
-        <rdfs:isDefinedBy>https://w3id.org/def/saref4bldg#PhysicalObject</rdfs:isDefinedBy>
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#SpatialObject">
+        <rdfs:subClassOf rdf:resource="http://purl.org/recognition/Cim#Cluster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+        <rdfs:comment>A point, typically described using a coordinate system relative to Earth, such as WGS84.</rdfs:comment>
+        <rdfs:isDefinedBy>http://www.w3.org/2003/01/geo/wgs84_pos#</rdfs:isDefinedBy>
+        <rdfs:label>Point</rdfs:label>
     </owl:Class>
     
 
@@ -783,6 +812,445 @@ SAREF4BLDG ontology, an extension of the SAREF ontology that was created based o
     
 
 
+    <!-- https://saref.etsi.org/core/CloseCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/CloseCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+        <rdfs:comment>A type of command</rdfs:comment>
+        <rdfs:comment>Close command</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/CloseState -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/CloseState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/OpenCloseState"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Command -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Command">
+        <rdfs:comment>A directive that a device must support to perform a certain function. A command may act upon a state, but does not necessarily act upon a state. For example, the ON command acts upon the ON/OFF state, but the GET command does not act upon any state, it simply gives a directive to retrieve a certain value. We propose here a list of commands that are relevant for the purpose of SAREF, but this list can be extended.</rdfs:comment>
+        <rdfs:label>Command</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Currency -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Currency">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/EnergyUnit -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/EnergyUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/GetCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/GetCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/GetCurrentMeterValueCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/GetCurrentMeterValueCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/GetCommand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/GetMeterDataCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/GetMeterDataCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/GetCommand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/GetMeterHistoryCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/GetMeterHistoryCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/GetCommand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/GetSensingDataCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/GetSensingDataCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/GetCommand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/IlluminanceUnit -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/IlluminanceUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/MultiLevelState -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/MultiLevelState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/State"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/NotifyCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/NotifyCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OffCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OffCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OffState -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OffState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/OnOffState"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OnCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OnCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OnOffState -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OnOffState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/State"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OnState -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OnState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/OnOffState"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OpenCloseState -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OpenCloseState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/State"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OpenCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OpenCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OpenState -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OpenState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/OpenCloseState"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/PauseCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/PauseCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/PowerUnit -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/PowerUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/PressureUnit -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/PressureUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Service -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Service">
+        <rdfs:comment>A service is a representation of a function to a network that makes the function discoverable, registerable, remotely controllable by other devices in the network. A service can represent one or more functions. A Service is offered by a device that wants (a certain set of) its function(s) to be discoverable, registerable, remotely controllable by other devices in the network. A Service must specify the device that is offering the service and the function(s) to be represented.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/SetAbsoluteLevelCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/SetAbsoluteLevelCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/SetLevelCommand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/SetLevelCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/SetLevelCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/SetRelativeLevelCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/SetRelativeLevelCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/SetLevelCommand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/StartCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/StartCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/StartState -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/StartState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/StartStopState"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/StartStopState -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/StartStopState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/State"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/State -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/State">
+        <rdfs:comment>The state in which a device can be found, e.g, ON/OFF/STANDBY, or ONLINE/OFFLINE. We propose here a list of states that are relevant for the purpose of SAREF, but this list can be extended.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/StepDownCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/StepDownCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/StepUpCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/StepUpCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/StopCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/StopCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/StopState -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/StopState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/StartStopState"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/SwitchOnService -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/SwitchOnService">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Service"/>
+        <rdfs:comment>A type of service that represents an on/off function to the network</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Task -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Task">
+        <rdfs:comment>The goal for which a device is designed (from a user perspective). For example, a washing machine is designed for the task of washing. We propose here a list of tasks that are relevant for the purpose of SAREF, but this list can be extended. Tasks can be accomplished by devices (saref:isAccomplishedBy).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/TemperatureUnit -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/TemperatureUnit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Time -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Time">
+        <rdfs:comment>A class that allows to specify the time concept.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/ToggleCommand -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/ToggleCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#Boiler -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#Boiler">
+        <rdfs:subClassOf rdf:resource="http://purl.org/recognition/Cim#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#BuildingObject -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#BuildingObject">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#Burner -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#Burner">
+        <rdfs:subClassOf rdf:resource="http://purl.org/recognition/Cim#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#ElectricFlowStorageDevice -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#ElectricFlowStorageDevice">
+        <rdfs:subClassOf rdf:resource="http://purl.org/recognition/Cim#Asset"/>
+        <rdfs:comment>An electric flow storage device is a device in which electrical energy is stored and from which energy may be progressively released.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#ElectricGenerator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#ElectricGenerator">
+        <rdfs:subClassOf rdf:resource="http://purl.org/recognition/Cim#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#Engine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#Engine">
+        <rdfs:subClassOf rdf:resource="http://purl.org/recognition/Cim#Asset"/>
+        <rdfs:comment>An engine is a device that converts fuel into mechanical energy through combustion.</rdfs:comment>
+        <rdfs:seeAlso>https://w3id.org/ifc/IFC4_ADD1#IfcEngine</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#SolarDevice -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#SolarDevice">
+        <rdfs:subClassOf rdf:resource="http://purl.org/recognition/Cim#Asset"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/def/saref4city#KeyPerfomanceIndicatorAssessement -->
 
 
@@ -815,13 +1283,6 @@ SAREF4BLDG ontology, an extension of the SAREF ontology that was created based o
     
 
 
-    <!-- https://w3id.org/saref#Command -->
-
-
-    <owl:Class rdf:about="https://w3id.org/saref#Command"/>
-    
-
-
     <!-- https://w3id.org/saref#Device -->
 
 
@@ -832,7 +1293,7 @@ SAREF4BLDG ontology, an extension of the SAREF ontology that was created based o
                 <owl:allValuesFrom rdf:resource="https://w3id.org/saref#Property"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/saref4bldg#BuildingObject"/>
         <rdfs:comment>A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device&apos;s user vs. the point of view of the device&apos;s manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/def/saref#</rdfs:isDefinedBy>
         <rdfs:label>Device</rdfs:label>
@@ -846,6 +1307,7 @@ SAREF4BLDG ontology, an extension of the SAREF ontology that was created based o
     <owl:Class rdf:about="https://w3id.org/saref#Energy">
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Property"/>
         <rdfs:comment>A property related to measurements that are characterized  by a value measured in energy units</rdfs:comment>
+        <rdfs:isDefinedBy>https://saref.etsi.org/core/</rdfs:isDefinedBy>
         <rdfs:label>Energy</rdfs:label>
     </owl:Class>
     
@@ -952,6 +1414,24 @@ SAREF4BLDG ontology, an extension of the SAREF ontology that was created based o
 
     <owl:Class rdf:about="https://w3id.org/saref#UnitOfMeasure">
         <rdfs:isDefinedBy>https://w3id.org/saref</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/saref/sarefHVAC -->
+
+
+    <owl:Class rdf:about="https://w3id.org/saref/sarefHVAC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/saref/sarefSensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/saref/sarefSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Device"/>
     </owl:Class>
     
 
