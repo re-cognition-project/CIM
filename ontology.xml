@@ -716,6 +716,16 @@
     
 
 
+    <!-- https://w3id.org/def/saref4bldg#hasLock -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/saref4bldg#hasLock">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment>Indication of whether a switching device has a key operated lock (=TRUE) or not (= FALSE).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/saref#hasTimestamp -->
 
 

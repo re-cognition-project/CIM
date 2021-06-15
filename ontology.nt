@@ -343,6 +343,11 @@
 <https://saref.etsi.org/core/hasTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://saref.etsi.org/core/hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
 # 
+# https://w3id.org/def/saref4bldg#hasLock
+<https://w3id.org/def/saref4bldg#hasLock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/saref4bldg#hasLock> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/def/saref4bldg#hasLock> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of whether a switching device has a key operated lock (=TRUE) or not (= FALSE)." .
+# 
 # https://w3id.org/saref#hasTimestamp
 <https://w3id.org/saref#hasTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/saref#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .

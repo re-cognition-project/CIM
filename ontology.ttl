@@ -408,6 +408,12 @@
                                            rdfs:subPropertyOf owl:topDataProperty .
 
 
+###  https://w3id.org/def/saref4bldg#hasLock
+<https://w3id.org/def/saref4bldg#hasLock> rdf:type owl:DatatypeProperty ;
+                                          rdfs:subPropertyOf owl:topDataProperty ;
+                                          rdfs:comment "Indication of whether a switching device has a key operated lock (=TRUE) or not (= FALSE)." .
+
+
 ###  https://w3id.org/saref#hasTimestamp
 <https://w3id.org/saref#hasTimestamp> rdf:type owl:DatatypeProperty ;
                                       rdfs:subPropertyOf owl:topDataProperty .
